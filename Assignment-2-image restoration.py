@@ -55,7 +55,7 @@ for j in range(1,5):
         def ssim_1(img1,img2):
             ss=ssim(img1,img2,multichannel=True)
             return ss
-
+        #fft and ifft were written in reference to sudarshan
         def func_fft(func):
 
             exponent_ux_M = np.exp(-1*iota*2*np.pi*np.array(np.fromfunction(lambda x, u: x*u/M, (M, M), dtype=complex)))
